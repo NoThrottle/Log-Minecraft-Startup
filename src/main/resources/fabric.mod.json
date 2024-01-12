@@ -1,0 +1,33 @@
+{
+	"schemaVersion": 1,
+	"id": "log_minecraft_startup",
+	"version": "${version}",
+	"name": "Log Minecraft Startup",
+	"description": "Literally just outputs when the Minecraft windows finally appears.",
+	"authors": [
+		"NoThrottle"
+	],
+	"contact": {
+		"homepage": "https://github.com/NoThrottle",
+		"sources": "https://github.com/NoThrottle"
+	},
+	"license": "MIT",
+	"icon": "assets/log_minecraft_startup/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.nothrottle.log_minecraft_startup.Initializer"
+		],
+		"preLaunch": [
+			"com.nothrottle.log_minecraft_startup.PreLaunch"
+		]
+	},
+	"depends": {
+		"fabricloader": ">=0.14.0",
+		"minecraft": ">=1.18",
+		"fabric": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
